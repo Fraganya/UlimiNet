@@ -1,28 +1,26 @@
 package ht.me.fraganya.uliminet;
 
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class SignupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_signup);
     }
 
     public void onLoginBtnClicked(View view)
     {
-         Intent loginIntent = new Intent(this,Login.class);
-         startActivity(loginIntent);
+        Intent loginIntent = new Intent(this,Login.class);
+        startActivity(loginIntent);
     }
 
-    public void onProceedBtnClicked(View view)
+    public void onSignupBtnClicked(View view)
     {
-        Intent signUpIntent = new Intent(this,SignupActivity.class);
-        startActivity(signUpIntent);
+       //retrieve details and sign up to server
     }
 }

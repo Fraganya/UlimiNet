@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Chichewa</item>
+        <item>Tumbuka</item>
+        <item>Lomwe</item>
+    </string-array>
+    <string-array name="specialty_skills">
+        <item>Farming</item>
+        <item>Forestry</item>
+        <item>Horticulture</item>
+        <item>Poultry</item>
+    </string-array>
+</resources>
