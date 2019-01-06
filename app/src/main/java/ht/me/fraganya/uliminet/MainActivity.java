@@ -11,7 +11,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+        //@todo check if an account already exist
+        boolean account_exists = false;
+
+        if(account_exists){
+            //@todo pass account data
+            Intent startUlimiActivityIntent = new Intent(this,UlimiActivity.class);
+            startActivity(startUlimiActivityIntent);
+        }
+        else{
+            setContentView(R.layout.activity_main);
+        }
+
     }
 
     public void onLoginBtnClicked(View view)

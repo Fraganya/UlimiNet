@@ -10,9 +10,17 @@
     >
 
     <TextView
+        android:id="@+id/user_fullname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UlimiNet / Fraganya"
+        android:layout_marginBottom="5dp"
+        android:text="fullname"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
+    <TextView
+        android:id="@+id/user_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
+        android:text="username"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"/>
 </LinearLayout>

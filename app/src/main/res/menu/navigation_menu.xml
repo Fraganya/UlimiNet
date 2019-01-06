@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group android:id="@+id/app_menu" android:checkableBehavior="single">
         <item
             android:id="@+id/home"
             android:title="Home"
@@ -17,10 +17,21 @@
             android:id="@+id/market"
             android:title="Market"
             android:icon="@drawable/ic_shopping_cart"/>
+    </group>
+    <group android:id="@+id/account_menu" android:checkableBehavior="single">
         <item
             android:id="@+id/settings"
             android:title="Settings"
             android:icon="@drawable/ic_settings" />
+        <item
+            android:id="@+id/personal_details_opt"
+            android:title="My Details"
+            android:icon="@drawable/ic_person" />
+        <item
+            android:id="@+id/logout_opt"
+            android:title="Logout"
+            android:icon="@drawable/ic_clear_black_24dp" />
     </group>
+
 
 </menu>
