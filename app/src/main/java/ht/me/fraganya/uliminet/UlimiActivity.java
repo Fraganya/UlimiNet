@@ -29,7 +29,7 @@ public class UlimiActivity extends AppCompatActivity {
 
         //check if a user is logged in
         if(!SharedPreferencesMgr.getInstance(this).isLoggedIn()){
-            startActivity(new Intent(getApplicationContext(),Login.class));
+            startActivity(new Intent(getApplicationContext(),LoginActivity.class));
             return;
         }
 
@@ -121,7 +121,7 @@ public class UlimiActivity extends AppCompatActivity {
     public void logout()
     {
         SharedPreferencesMgr.getInstance(this).logout();
-        startActivity(new Intent(UlimiActivity.this,Login.class));
+        startActivity(new Intent(UlimiActivity.this,LoginActivity.class));
     }
 
 

@@ -3,7 +3,6 @@ package ht.me.fraganya.uliminet;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,7 +14,7 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     ProgressDialog loginProgress;
     @Override
@@ -44,7 +43,7 @@ public class Login extends AppCompatActivity {
         class LoginTask extends AsyncTask<Void,Void,String>{
             ProgressDialog loginProgress;
 
-            public LoginTask(Login activity){
+            public LoginTask(LoginActivity activity){
                 loginProgress = new ProgressDialog(activity);
             }
 
@@ -107,7 +106,7 @@ public class Login extends AppCompatActivity {
             }
         }
 
-        LoginTask loginTask = new LoginTask(Login.this);
+        LoginTask loginTask = new LoginTask(LoginActivity.this);
         loginTask.execute();
 
     }

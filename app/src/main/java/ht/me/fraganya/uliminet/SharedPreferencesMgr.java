@@ -64,7 +64,7 @@ public class SharedPreferencesMgr {
         editor.clear();
         editor.apply();
 
-        mgrCtx.startActivity(new Intent(mgrCtx,Login.class));
+        mgrCtx.startActivity(new Intent(mgrCtx,LoginActivity.class));
     }
 
 }
